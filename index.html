@@ -8,14 +8,11 @@
 				$('#f input:checked').each(function() {
 				    imgName += '_'+$(this).attr('value');
 				});
-				console.log(imgName);
 				$('img').hide();
+				$('#impossible').show();
 				if ($('#'+imgName)) {
 					$('#'+imgName).show();
 					$('#impossible').hide();
-				}
-				else {
-					$('#impossible').show();
 				}
 			});
 		});
@@ -27,12 +24,12 @@
 		<input type="checkbox" value="1" checked>Total
 		<input type="checkbox" value="2" checked>Function
 		<input type="checkbox" value="3" checked>Injection
-		<input type="checkbox" value="4" checked>Surjection
-		<input type="checkbox" value="5" checked>Bijection
+		<input type="checkbox" value="4">Surjection
+		<input type="checkbox" value="5">Bijection
 	</form>
 	<div id="container">
-		<img id="jections_1_2_3_4_5" src="jections_1_2_3_4_5.png">
-		<img id="jections_1_2_3" src="jections_1_2_3.png" style="display:none;">
+		<img id="jections_1_2_3_4_5" src="jections_1_2_3_4_5.png" style="display:none;">
+		<img id="jections_1_2_3" src="jections_1_2_3.png">
 		<img id="jections_1_2_4" src="jections_1_2_4.png" style="display:none;">
 		<img id="jections_1_2" src="jections_1_2.png" style="display:none;">
 		<img id="jections_1_3_4" src="jections_1_3_4.png" style="display:none;">
