@@ -10,7 +10,7 @@
 				});
 				$('img').hide();
 				$('#impossible').show();
-				if ($('#'+imgName)) {
+				if($("#" + imgName).length == 0)
 					$('#'+imgName).show();
 					$('#impossible').hide();
 				}
